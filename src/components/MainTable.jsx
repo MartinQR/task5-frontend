@@ -45,12 +45,12 @@ function MainTable({ seed }) {
   };
 
   useEffect(() => {
-    fetchBooks(20);
+    fetchBooks(10);
   }, []);
 
   useEffect(() => {
     setDataBooks([]);
-    fetchBooks(20);
+    fetchBooks(10);
   }, [seed]);
 
   // HandleActions
@@ -62,7 +62,7 @@ function MainTable({ seed }) {
 
     if (bottom && !loading) {
       console.log("Handler");
-      fetchBooks(10);
+      fetchBooks(5);
     }
   }
 
