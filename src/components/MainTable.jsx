@@ -14,7 +14,7 @@ function MainTable({ seed }) {
   const fetchBooks = async (number) => {
     setLoading(true);
     try {
-      fetch("https://1k6ckr9w-5000.usw3.devtunnels.ms/api/random-books", {
+      fetch("https://task5-backend-oe8l.onrender.com/api/random-books", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
